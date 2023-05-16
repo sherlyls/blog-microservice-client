@@ -16,6 +16,16 @@ const PostList = () => {
     fetchPosts();
   }, []);
 
+  // useEffect(() => {
+  //   axios
+  //   .get("http://localhost:4000/posts")
+  //   .then((res) => {
+  //     console.log(res.data)
+  //     setPosts(res.data)
+  //   })
+  //   .catch((err) => console.log(err))
+  // }, [])
+
   const renderedPosts = Object.values(posts).map((post) => {
     return (
       <div
